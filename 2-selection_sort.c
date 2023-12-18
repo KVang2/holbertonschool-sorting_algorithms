@@ -32,6 +32,6 @@ void selection_sort(int *array, size_t size)
 				min = j;
 			}
 		}
-	swap(&arr[min], &arr[i];
+	swap(&array[min], &array[i]);
 	}
 }
