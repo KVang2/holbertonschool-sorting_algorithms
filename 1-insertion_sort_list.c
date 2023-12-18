@@ -33,8 +33,6 @@ void insertion_sort_list(listint_t **list)
 			{
 				*list = temp;
 			}
-			swapped = 1;
-
 			print_list(*list);
 		}
 			node = temp->next;
