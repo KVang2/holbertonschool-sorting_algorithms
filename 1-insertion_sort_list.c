@@ -5,6 +5,8 @@
 */
 void insertion_sort_list(listint_t **list)
 {
+	listint_t *node, *temp = NULL;
+
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 	{
 		exit(EXIT_FAILURE);
