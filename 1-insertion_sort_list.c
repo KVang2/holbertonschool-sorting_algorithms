@@ -14,7 +14,6 @@ void insertion_sort_list(listint_t **list)
 	while (node != NULL)
 	{
 		temp = node;
-		int swapped = 0;
 
 		while (temp->prev != NULL && temp->n < temp->prev->n)
 		{
@@ -38,12 +37,6 @@ void insertion_sort_list(listint_t **list)
 
 			print_list(*list);
 		}
-
-		if (!swapped)
-		{
-			node = node->next;
-		}
-		else
 			node = temp->next;
 	}
 }
