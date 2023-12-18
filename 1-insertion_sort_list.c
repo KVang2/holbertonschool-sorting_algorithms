@@ -10,8 +10,10 @@ void insertion_sort_list(listint_t **list)
 		exit(EXIT_FAILURE);
 	}
 
-	listint_t *node = *list;
+	listint_t *node;
 	listint_t *temp = NULL;
+
+	node = *list;
 
 	while (node != NULL)
 	{
