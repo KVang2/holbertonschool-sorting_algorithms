@@ -16,6 +16,7 @@ void swaps(int *a, int *b)
  * @array: array of int to sort
  * @size: size of array
 */
+void bubble_sort(int *array, size_t size)
 {
 	size_t i, j;
 
