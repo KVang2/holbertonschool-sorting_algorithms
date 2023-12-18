@@ -22,9 +22,9 @@ void swaps(int *a, int *b)
 	if (array == NULL || size == 0)
 		return;
 
-	for (i = 0; i < size - i -1; i++)
+	for (i = 0; i < size - i - 1; i++)
 	{
-		for (j = 0; j < size - i -1; j++)
+		for (j = 0; j < size - i - 1; j++)
 		{
 			if (array[i] > array[i + 1])
 			{
