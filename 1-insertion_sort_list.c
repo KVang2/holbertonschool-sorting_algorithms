@@ -5,12 +5,14 @@
 */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *node = NULL, *temp = NULL;
-
 	if (list == NULL || *list == NULL || (*list)->next == NULL)
 	{
 		exit(EXIT_FAILURE);
 	}
+
+	listint_t *node = *list;
+	listint_t *temp = NULL;
+
 	while (node != NULL)
 	{
 		temp = node;
