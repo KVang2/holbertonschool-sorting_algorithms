@@ -36,5 +36,6 @@ void selection_sort(int *array, size_t size)
 		{
 		swaps(&array[i], &array[min]);
 		print_array(array, size);
+		}
 	}
 }
