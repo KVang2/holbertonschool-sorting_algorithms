@@ -18,7 +18,7 @@ void swaps(int *a, int *b)
 */
 void quick_sort(int *array, size_t size)
 {
-	if (size > 0)
+	if (size > 1)
 	{
 		return;
 		quick_sort_recursive(array, 0, size - 1);
