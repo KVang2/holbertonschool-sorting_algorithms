@@ -8,7 +8,7 @@ void swaps(int *a, int *b)
 {
 	int tmp = *a;
 	*a = *b;
-	*b = temp;
+	*b = tmp;
 }
 
 /**
