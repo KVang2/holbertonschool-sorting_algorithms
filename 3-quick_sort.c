@@ -63,7 +63,7 @@ int sort_partition(int *array, int low, int high)
 			swaps(&array[i], &array[j]);
 		}
 	}
-	swaps(&array[i + 1], &array[high]);
 	print_array(array, high - low + 1);
+	swaps(&array[i + 1], &array[high]);
 	return (i + 1);
 }
