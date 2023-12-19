@@ -35,7 +35,7 @@ void quick_sort_recursive(int *array, int low, int high)
 {
 	if (low < high)
 	{
-		int part = partition(array, low, high);
+		int part = sort_partition(array, low, high);
 
 		quick_sort_recursive(array, low, part - 1);
 		quick_sort_recursive(array, part + 1, high);
@@ -51,10 +51,11 @@ void quick_sort_recursive(int *array, int low, int high)
 */
 int sort_partition(int *array, int low, int high)
 {
-	int pivot = arrray[high];
+	int pivot = array[high];
 	int i = low - 1;
+	int j = 0;
 
-	for (int j = low j <= high - 1; j++)
+	for (j = low; j < high; j++)
 	{
 		if (array[j] <= pivot)
 		{
